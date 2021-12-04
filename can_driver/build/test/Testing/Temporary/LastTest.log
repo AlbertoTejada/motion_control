@@ -1,0 +1,462 @@
+Start testing: Sep 18 16:35 CEST
+----------------------------------------------------------
+1/17 Testing: SpiTest.InitDriver
+1/17 Test: SpiTest.InitDriver
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.InitDriver" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.InitDriver" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.InitDriver
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.InitDriver
+[       OK ] SpiTest.InitDriver (0 ms)
+[----------] 1 test from SpiTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.InitDriver" end time: Sep 18 16:35 CEST
+"SpiTest.InitDriver" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/17 Testing: SpiTest.reset
+2/17 Test: SpiTest.reset
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.reset" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.reset" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.reset
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.reset
+[       OK ] SpiTest.reset (17 ms)
+[----------] 1 test from SpiTest (18 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (18 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.reset" end time: Sep 18 16:35 CEST
+"SpiTest.reset" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/17 Testing: SpiTest.setConfigMode
+3/17 Test: SpiTest.setConfigMode
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.setConfigMode" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.setConfigMode" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.setConfigMode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.setConfigMode
+[       OK ] SpiTest.setConfigMode (0 ms)
+[----------] 1 test from SpiTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.setConfigMode" end time: Sep 18 16:35 CEST
+"SpiTest.setConfigMode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/17 Testing: SpiTest.setListenOnlyMode
+4/17 Test: SpiTest.setListenOnlyMode
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.setListenOnlyMode" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.setListenOnlyMode" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.setListenOnlyMode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.setListenOnlyMode
+[       OK ] SpiTest.setListenOnlyMode (1 ms)
+[----------] 1 test from SpiTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.setListenOnlyMode" end time: Sep 18 16:35 CEST
+"SpiTest.setListenOnlyMode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/17 Testing: SpiTest.setSleepMode
+5/17 Test: SpiTest.setSleepMode
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.setSleepMode" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.setSleepMode" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.setSleepMode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.setSleepMode
+[       OK ] SpiTest.setSleepMode (0 ms)
+[----------] 1 test from SpiTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.setSleepMode" end time: Sep 18 16:35 CEST
+"SpiTest.setSleepMode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/17 Testing: SpiTest.setLoopbackMode
+6/17 Test: SpiTest.setLoopbackMode
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.setLoopbackMode" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.setLoopbackMode" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.setLoopbackMode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.setLoopbackMode
+[       OK ] SpiTest.setLoopbackMode (1 ms)
+[----------] 1 test from SpiTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.setLoopbackMode" end time: Sep 18 16:35 CEST
+"SpiTest.setLoopbackMode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/17 Testing: SpiTest.setNormalMode
+7/17 Test: SpiTest.setNormalMode
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.setNormalMode" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.setNormalMode" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.setNormalMode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.setNormalMode
+[       OK ] SpiTest.setNormalMode (1 ms)
+[----------] 1 test from SpiTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.setNormalMode" end time: Sep 18 16:35 CEST
+"SpiTest.setNormalMode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/17 Testing: SpiTest.setClkOut
+8/17 Test: SpiTest.setClkOut
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.setClkOut" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.setClkOut" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.setClkOut
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.setClkOut
+[       OK ] SpiTest.setClkOut (3 ms)
+[----------] 1 test from SpiTest (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (6 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.setClkOut" end time: Sep 18 16:35 CEST
+"SpiTest.setClkOut" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/17 Testing: SpiTest.setBitrate
+9/17 Test: SpiTest.setBitrate
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.setBitrate" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.setBitrate" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.setBitrate
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.setBitrate
+[       OK ] SpiTest.setBitrate (1 ms)
+[----------] 1 test from SpiTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.setBitrate" end time: Sep 18 16:35 CEST
+"SpiTest.setBitrate" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/17 Testing: SpiTest.setFilterMask
+10/17 Test: SpiTest.setFilterMask
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.setFilterMask" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.setFilterMask" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.setFilterMask
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.setFilterMask
+[       OK ] SpiTest.setFilterMask (1 ms)
+[----------] 1 test from SpiTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.setFilterMask" end time: Sep 18 16:35 CEST
+"SpiTest.setFilterMask" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/17 Testing: SpiTest.setFilter
+11/17 Test: SpiTest.setFilter
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.setFilter" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.setFilter" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.setFilter
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.setFilter
+[       OK ] SpiTest.setFilter (4 ms)
+[----------] 1 test from SpiTest (11 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (11 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.setFilter" end time: Sep 18 16:35 CEST
+"SpiTest.setFilter" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/17 Testing: SpiTest.sendMessage
+12/17 Test: SpiTest.sendMessage
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.sendMessage" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.sendMessage" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.sendMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.sendMessage
+[       OK ] SpiTest.sendMessage (1 ms)
+[----------] 1 test from SpiTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.sendMessage" end time: Sep 18 16:35 CEST
+"SpiTest.sendMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/17 Testing: SpiTest.readMessage
+13/17 Test: SpiTest.readMessage
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.readMessage" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.readMessage" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.readMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.readMessage
+[       OK ] SpiTest.readMessage (1 ms)
+[----------] 1 test from SpiTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.readMessage" end time: Sep 18 16:35 CEST
+"SpiTest.readMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/17 Testing: SpiTest.getStatus
+14/17 Test: SpiTest.getStatus
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.getStatus" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.getStatus" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.getStatus
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.getStatus
+[       OK ] SpiTest.getStatus (1 ms)
+[----------] 1 test from SpiTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.getStatus" end time: Sep 18 16:35 CEST
+"SpiTest.getStatus" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/17 Testing: SpiTest.checkReceive
+15/17 Test: SpiTest.checkReceive
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.checkReceive" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.checkReceive" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.checkReceive
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.checkReceive
+[       OK ] SpiTest.checkReceive (1 ms)
+[----------] 1 test from SpiTest (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (8 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.checkReceive" end time: Sep 18 16:35 CEST
+"SpiTest.checkReceive" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/17 Testing: SpiTest.getErrorFlags
+16/17 Test: SpiTest.getErrorFlags
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.getErrorFlags" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.getErrorFlags" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.getErrorFlags
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.getErrorFlags
+[       OK ] SpiTest.getErrorFlags (1 ms)
+[----------] 1 test from SpiTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.getErrorFlags" end time: Sep 18 16:35 CEST
+"SpiTest.getErrorFlags" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/17 Testing: SpiTest.checkError
+17/17 Test: SpiTest.checkError
+Command: "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test" "--gtest_filter=SpiTest.checkError" "--gtest_also_run_disabled_tests"
+Directory: /home/alberto/Documents/Projects/motion_control/can_driver/build/test
+"SpiTest.checkError" start time: Sep 18 16:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/alberto/Documents/Projects/motion_control/can_driver/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SpiTest.checkError
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SpiTest
+[ RUN      ] SpiTest.checkError
+[       OK ] SpiTest.checkError (1 ms)
+[----------] 1 test from SpiTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SpiTest.checkError" end time: Sep 18 16:35 CEST
+"SpiTest.checkError" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 18 16:35 CEST

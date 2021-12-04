@@ -1,0 +1,49 @@
+Library specifications:
+
+This library implements a PID controller
+
+It uses the following inputs, all are indirectly read using an specific interface:
+int32_t current_value: current value of system under control, no units defined for the moment
+int32_t target_value: desired value of the system under control, no unit defined for the moment
+uint32_t elaspsed_time: timer error calculation
+
+It uses the following parameters, all are indirectly read from the system memory using an specific
+interface:
+float32 p: proportional constant of the controller
+float32 i: integral constant of the controller
+float32 d: differencial constant of the controller
+uint16_t i_pos_min: minimum positive value of the system under control different than zero
+uint16_t i_neg_min: minimum negative value of the system under control different than zero
+uint16_t i_pos_max: maximum positive value of the system under control
+uint16_t i_neg_max: maximum negative value of the system under control
+int32_t o_pos_min: control signal for the actuactor that sets i_pos_min in static mode
+int32_t o_neg_min: control signal for the actuactor that sets i_neg_min in static mode
+int32_t o_pos_max: maximum value of the control signal for the actuactor
+int32_t o_neg_max: minimum value of the control signal for the actuactor
+uint8_t calibrated: boolean value, it retrieves 1 if the pid is calibrated or 0 if it is not.
+
+It retrieves the following outputs:
+int32_t control_signal: control signal for the actuactor of ther system, no units defined
+
+
+uint8_t init_pid(void)
+It has a init functions with no arguments that assigns a default value to the variables and reads
+the  parameters values from the memory, it returns 0 if no error was detected and an error code
+otherwise, error codes not defined for the moment
+The initial values for the variables are:
+current_value = 0
+target_value = 0
+elaspsed_time = PID_TASK_TIME
+Where PID_TASK_TIME is defined as the peridic cyclic time in ms
+The values of the parameters are read from the system memory thorugh the function
+rte_pid_read_params.
+
+unit8_t read_inputs_pid(void)
+It has a read function with no arguments that updated the inputs in each cycle, it returns 0 if
+no error has been detected and an error code otherwise, errors codes are not defined for the moment.
+The inputs are read from the the system through its respectives functions.
+If the inputs are correctly readed, it shall check that the values are in the valid range defined by
+the parameters.
+
+uint8_t pid(void)
+It has a pid function that computes the inputs and calculates the control signal.

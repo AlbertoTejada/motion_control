@@ -1,0 +1,7 @@
+11:SpiTest.setFilter
+12:SpiTest.sendMessage
+13:SpiTest.readMessage
+14:SpiTest.getStatus
+15:SpiTest.checkReceive
+16:SpiTest.getErrorFlags
+17:SpiTest.checkError
