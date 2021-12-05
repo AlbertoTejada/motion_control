@@ -1,2 +1,0 @@
-/usr/bin/ar qc libcan_driver.a  CMakeFiles/can_driver.dir/Mcp2515.c.o CMakeFiles/can_driver.dir/Mcp2515_Cfg.c.o
-/usr/bin/ranlib libcan_driver.a

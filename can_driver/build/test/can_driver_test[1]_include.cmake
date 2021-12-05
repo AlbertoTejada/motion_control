@@ -1,5 +1,0 @@
-if(EXISTS "/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test[1]_tests.cmake")
-  include("/home/alberto/Documents/Projects/motion_control/can_driver/build/test/can_driver_test[1]_tests.cmake")
-else()
-  add_test(can_driver_test_NOT_BUILT can_driver_test_NOT_BUILT)
-endif()

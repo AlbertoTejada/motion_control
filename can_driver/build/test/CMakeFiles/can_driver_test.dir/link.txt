@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/can_driver_test.dir/can_driver_test.cpp.o CMakeFiles/can_driver_test.dir/__/src/Mcp2515.c.o CMakeFiles/can_driver_test.dir/__/src/Mcp2515_Cfg.c.o  -o can_driver_test  ../lib/libgtest_main.a ../lib/libgmock_main.a mocks/libmocks.a ../lib/libgmock.a ../lib/libgtest.a -lpthread 

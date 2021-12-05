@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmocks.a  CMakeFiles/mocks.dir/Fixture.cpp.o CMakeFiles/mocks.dir/FakeSpi.cpp.o CMakeFiles/mocks.dir/FakeTimer.cpp.o
-/usr/bin/ranlib libmocks.a
