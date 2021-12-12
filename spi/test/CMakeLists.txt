@@ -9,13 +9,17 @@
 # Matthias Kleemann
 ##########################################################################
 
-add_avr_executable(
-  spi_test
-  spi_test.c
-)
-
-find_library(C_LIB c)
-message(STATUS "avr-libc: ${C_LIB}")
-
-avr_target_link_libraries(spi_test spi ${C_LIB})
+if(CMAKE_CROSSCOMPILING)
+  add_avr_executable(
+    spi_test
+    spi_test.c
+  )
+  
+  find_library(C_LIB c)
+  message(STATUS "avr-libc: ${C_LIB}")
+  
+  avr_target_link_libraries(spi_test spi ${C_LIB})
+else(CMAKE_CROSSCOMPILING)
+   add_subdirectory(mocks)
+endif(CMAKE_CROSSCOMPILING)
 

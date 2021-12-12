@@ -1,7 +1,7 @@
 #include "pwm.h" 
 #include "board.h"
 
-void init(void) {
+void pwm_init(void) {
 	// Set the PWM pins as output:
 	MOTOR_PWM_DIR |= (OUTPUT << MOTOR_PWM);
 	STEERING_PWM_DIR |= (OUTPUT << STEERING_PWM);

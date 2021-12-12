@@ -19,5 +19,7 @@ if(CMAKE_CROSSCOMPILING)
    message(STATUS "avr-libc: ${C_LIB}")
    
    avr_target_link_libraries(pwm_test pwm ${C_LIB})
+else(CMAKE_CROSSCOMPILING)
+   add_subdirectory(mocks)
 endif(CMAKE_CROSSCOMPILING)
 

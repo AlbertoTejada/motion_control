@@ -11,9 +11,4 @@ if(CMAKE_CROSSCOMPILING)
 	)
 else(CMAKE_CROSSCOMPILING)
 	add_library(pid pid.c)
-	
-	target_include_directories(
-		pid	
-		PUBLIC ${pid_dir}/inc
-	)
 endif(CMAKE_CROSSCOMPILING)

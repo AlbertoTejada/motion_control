@@ -1,10 +1,9 @@
 add_library(
-  mocks	
+  spi_mocks	
 	Fixture.cpp FakeSpi.cpp FakeTimer.cpp
 )
 
 target_include_directories(
-	mocks
+	spi_mocks
 	INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}
-	PUBLIC ${can_driver_SOURCE_DIR}/inc
 )

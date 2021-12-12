@@ -1,0 +1,1 @@
+cmake -DCROSSCOMPILE=false ..

@@ -5,7 +5,7 @@
  * \brief Initializes the GPIO pins and sets them to
  * low value.
  */
-void init(void);
+void gpio_init(void);
 
 /**
  * \brief Activates the CAN controller SPI

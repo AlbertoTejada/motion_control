@@ -10,7 +10,7 @@
  * \author Alberto Tejada
  */
 int main(void) {
-	init();
+	pwm_init();
 	set_motor_pwm(170u);
 	set_steering_pwm(64u);
 

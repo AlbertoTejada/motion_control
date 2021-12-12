@@ -19,9 +19,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 project(MOTION_CONTROL VERSION 0.0)
 
-set(CMAKE_CROSSCOMPILING FALSE)
+# Check if native compilation or crosscompilation:
+if(NOT DEFINED CROSSCOMPILE)
+   set(CROSSCOMPILE false)
+endif(NOT DEFINED CROSSCOMPILE)
+message(STATUS "Crosscompiling? ${CROSSCOMPILE}") 
+
 if(CROSSCOMPILE)
    include(cross_compile.cmake)
+else(CROSSCOMPILE)
+   include(native_test.cmake)
 endif(CROSSCOMPILE)
 
 ##################################################################################
@@ -43,7 +50,11 @@ endif(NOT CMAKE_BUILD_TYPE)
 # endforeach()
 add_subdirectory(pwm)
 add_subdirectory(gpio)
+add_subdirectory(spi)
+add_subdirectory(adc)
+add_subdirectory(cnt)
 add_subdirectory(pid)
+add_subdirectory(can_driver)
 
 ##################################################################################
 # link library to executable

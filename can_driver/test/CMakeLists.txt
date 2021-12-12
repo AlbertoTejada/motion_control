@@ -1,25 +1,19 @@
-include(FetchContent)
-FetchContent_Declare(
-  googletest
-  URL https://github.com/google/googletest/archive/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip
-)
-
-# For Windows: Prevent overriding the parent project's compiler/linker settings
-set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-FetchContent_MakeAvailable(googletest)
-
-enable_testing()
 
 add_subdirectory(mocks)
-list(APPEND MOCKS_LIB mocks)
+list(APPEND MOCKS_LIB spi_mocks)
 
 add_executable(
   can_driver_test 
   can_driver_test.cpp
 )
 
+add_custom_target(
+  run_can_drv_test COMMAND CTEST_OUTPUT_ON_FAILURE=1 ${CMAKE_CTEST_COMMAND} DEPENDS can_driver_test
+)
+
 target_link_libraries(
   can_driver_test
+  can_driver
   gtest_main
   gmock_main
   ${MOCKS_LIB}
@@ -27,15 +21,7 @@ target_link_libraries(
 
 target_include_directories(
   can_driver_test
-	PUBLIC ${can_driver_SOURCE_DIR}/inc
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/mocks
 )
 
-target_sources(
-  can_driver_test
-  PUBLIC ${can_driver_SOURCE_DIR}/src/Mcp2515.c
-  PUBLIC ${can_driver_SOURCE_DIR}/src/Mcp2515_Cfg.c
-)
-
-include(GoogleTest)
 gtest_discover_tests(can_driver_test)

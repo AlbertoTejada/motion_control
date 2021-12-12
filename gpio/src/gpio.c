@@ -1,7 +1,7 @@
 #include "gpio.h"
 #include "board.h"
 
-void init(void) {
+void gpio_init(void) {
    // Configure the CAN driver CS pin as output:
    CAN_DVR_CS_DIR |= (OUTPUT << CAN_DVR_CS); 
    CAN_DVR_CS_PORT |= (1 << CAN_DVR_CS);

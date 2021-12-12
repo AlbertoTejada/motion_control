@@ -19,10 +19,10 @@
 												 FAST_PWM )
 #define PWM_CTRL_B_CFG ( PWM_CLOCK )
 
-void init(void);
+void pwm_init(void);
 
 void set_motor_pwm(uint8_t pwm);
 
 void set_steering_pwm(uint8_t pwm);
 
-#endif
+#endif // PWM_H

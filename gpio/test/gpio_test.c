@@ -18,7 +18,7 @@
  */
 int main(void)
 {
-   init();
+   gpio_init();
    _delay_ms(5000);
 
    while(1)
