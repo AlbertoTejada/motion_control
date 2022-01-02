@@ -18,7 +18,13 @@ if(CMAKE_CROSSCOMPILING)
   find_library(C_LIB c)
   message(STATUS "avr-libc: ${C_LIB}")
   
-  avr_target_link_libraries(spi_test spi ${C_LIB})
+  # SPI requires the GPIO lib for CS pin:
+  avr_target_include_directories(
+    spi_test 
+    PUBLIC ${gpio_dir}/inc
+  ) 
+
+  avr_target_link_libraries(spi_test spi gpio ${C_LIB})
 else(CMAKE_CROSSCOMPILING)
    add_subdirectory(mocks)
 endif(CMAKE_CROSSCOMPILING)
