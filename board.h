@@ -22,6 +22,14 @@
 * Definitions for the pin numbers and port and 
 * direction registers:
 */
+// UART Rx:
+#define UART_RX PIN0
+#define UART_RX_PORT PORTD
+#define UART_RX_DIR DDRD
+// UART Tx:
+#define UART_TX PIN1
+#define UART_TX_PORT PORTD
+#define UART_TX_DIR DDRD
 // CAN controller SPI chip selected:
 #define CAN_DVR_CS PIN2
 #define CAN_DVR_CS_PORT PORTB
@@ -62,7 +70,7 @@
 /**
 * Definition of the PWM and counter registers:
 */
-// Power motor and steering motor PWM configuration registers:
+// Power motor and steering motor PWM configuration:
 #define PWM_CTRL_A TCCR0A
 #define PWM_CTRL_B TCCR0B 
 // Output compare value for the power motor PWM:
@@ -76,5 +84,22 @@
 #define SPI_CTRL SPCR
 #define SPI_STAT SPSR
 #define SPI_DATA SPDR
+
+/**
+ * Definition of the UART registers:
+ */
+// Baud rate (high and low):
+#define UART_BRH UBRR0H
+#define UART_BRL UBRR0L
+// UART control:
+#define UART_CTRLA UCSR0A
+#define UART_CTRLB UCSR0B
+#define UART_CTRLC UCSR0C
+// UART data:
+#define UART_DATA UDR0
+// UART data register empty flag:
+#define UART_EMTY UDRE0
+// UART reveive complete flag:
+#define UART_RXCM RXC0
 
 #endif // BOARD_H
