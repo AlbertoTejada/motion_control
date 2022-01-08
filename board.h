@@ -19,17 +19,9 @@
 #define HIGH 1U
 
 /**
-* Definitions for the pin numbers and port and 
+* Definitions for the pin numbers, port and 
 * direction registers:
 */
-// UART Rx:
-#define UART_RX PIN0
-#define UART_RX_PORT PORTD
-#define UART_RX_DIR DDRD
-// UART Tx:
-#define UART_TX PIN1
-#define UART_TX_PORT PORTD
-#define UART_TX_DIR DDRD
 // CAN controller SPI chip selected:
 #define CAN_DVR_CS PIN2
 #define CAN_DVR_CS_PORT PORTB
@@ -102,4 +94,13 @@
 // UART reveive complete flag:
 #define UART_RXCM RXC0
 
+/*
+ * Definitions of the ADC registers:
+ */
+#define ADC_DATAL ADCL
+#define ADC_DATAH ADCH
+#define ADC_MUX ADMUX
+#define ADC_CTRLA ADCSRA
+#define ADC_CTRLB ADCSRB
+#define ADC_DISB DIDR0
 #endif // BOARD_H

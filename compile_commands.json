@@ -1,77 +1,77 @@
 [
 {
-  "directory": "/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-build/googlemock",
-  "command": "/usr/bin/c++   -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/include -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/include -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest    -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17 -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
-  "file": "/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/src/gmock_main.cc"
+  "directory": "/home/alberto/Documents/Projects/motion_control/build/pwm/src",
+  "command": "/usr/bin/avr-gcc -DF_CPU=4000000UL -I/home/alberto/Documents/Projects/motion_control -I/home/alberto/Documents/Projects/motion_control/pwm/inc  -Os   -fpack-struct -fshort-enums -Wall -Werror -pedantic -pedantic-errors -funsigned-char -funsigned-bitfields -ffunction-sections -c -std=gnu99 -mmcu=atmega328p -o CMakeFiles/pwm-atmega328p.dir/pwm.c.o   -c /home/alberto/Documents/Projects/motion_control/pwm/src/pwm.c",
+  "file": "/home/alberto/Documents/Projects/motion_control/pwm/src/pwm.c"
 },
 {
-  "directory": "/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-build/googlemock",
-  "command": "/usr/bin/c++   -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/include -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/include -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest    -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17 -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
-  "file": "/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/src/gmock-all.cc"
+  "directory": "/home/alberto/Documents/Projects/motion_control/build/pwm/test",
+  "command": "/usr/bin/avr-gcc -DF_CPU=4000000UL -I/home/alberto/Documents/Projects/motion_control -I/home/alberto/Documents/Projects/motion_control/pwm/inc  -Os   -fpack-struct -fshort-enums -Wall -Werror -pedantic -pedantic-errors -funsigned-char -funsigned-bitfields -ffunction-sections -c -std=gnu99 -mmcu=atmega328p -o CMakeFiles/pwm_test-atmega328p.elf.dir/pwm_test.c.o   -c /home/alberto/Documents/Projects/motion_control/pwm/test/pwm_test.c",
+  "file": "/home/alberto/Documents/Projects/motion_control/pwm/test/pwm_test.c"
 },
 {
-  "directory": "/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-build/googletest",
-  "command": "/usr/bin/c++   -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/include -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest    -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/src/gtest_main.cc",
-  "file": "/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/src/gtest_main.cc"
+  "directory": "/home/alberto/Documents/Projects/motion_control/build/gpio/src",
+  "command": "/usr/bin/avr-gcc -DF_CPU=4000000UL -I/home/alberto/Documents/Projects/motion_control -I/home/alberto/Documents/Projects/motion_control/gpio/inc  -Os   -fpack-struct -fshort-enums -Wall -Werror -pedantic -pedantic-errors -funsigned-char -funsigned-bitfields -ffunction-sections -c -std=gnu99 -mmcu=atmega328p -o CMakeFiles/gpio-atmega328p.dir/gpio.c.o   -c /home/alberto/Documents/Projects/motion_control/gpio/src/gpio.c",
+  "file": "/home/alberto/Documents/Projects/motion_control/gpio/src/gpio.c"
 },
 {
-  "directory": "/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-build/googletest",
-  "command": "/usr/bin/c++   -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/include -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest    -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/src/gtest-all.cc",
-  "file": "/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/src/gtest-all.cc"
+  "directory": "/home/alberto/Documents/Projects/motion_control/build/gpio/test",
+  "command": "/usr/bin/avr-gcc -DF_CPU=4000000UL -I/home/alberto/Documents/Projects/motion_control -I/home/alberto/Documents/Projects/motion_control/gpio/inc  -Os   -fpack-struct -fshort-enums -Wall -Werror -pedantic -pedantic-errors -funsigned-char -funsigned-bitfields -ffunction-sections -c -std=gnu99 -mmcu=atmega328p -o CMakeFiles/gpio_test-atmega328p.elf.dir/gpio_test.c.o   -c /home/alberto/Documents/Projects/motion_control/gpio/test/gpio_test.c",
+  "file": "/home/alberto/Documents/Projects/motion_control/gpio/test/gpio_test.c"
 },
 {
-  "directory": "/home/ubuntu/documents/projects/motion_control/build/pid/src",
-  "command": "/usr/bin/cc  -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/include -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/include -I/home/ubuntu/documents/projects/motion_control/pid/inc  -O3 -DNDEBUG   -o CMakeFiles/pid.dir/pid.c.o   -c /home/ubuntu/documents/projects/motion_control/pid/src/pid.c",
-  "file": "/home/ubuntu/documents/projects/motion_control/pid/src/pid.c"
+  "directory": "/home/alberto/Documents/Projects/motion_control/build/spi/src",
+  "command": "/usr/bin/avr-gcc -DF_CPU=4000000UL -I/home/alberto/Documents/Projects/motion_control -I/home/alberto/Documents/Projects/motion_control/spi/inc  -Os   -fpack-struct -fshort-enums -Wall -Werror -pedantic -pedantic-errors -funsigned-char -funsigned-bitfields -ffunction-sections -c -std=gnu99 -mmcu=atmega328p -o CMakeFiles/spi-atmega328p.dir/spi.c.o   -c /home/alberto/Documents/Projects/motion_control/spi/src/spi.c",
+  "file": "/home/alberto/Documents/Projects/motion_control/spi/src/spi.c"
 },
 {
-  "directory": "/home/ubuntu/documents/projects/motion_control/build/pid/test",
-  "command": "/usr/bin/c++   -I/home/ubuntu/documents/projects/motion_control/pid/inc -I/home/ubuntu/documents/projects/motion_control/pid/test/mocks -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/include -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/include -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/pid_test.dir/pid_test.cpp.o -c /home/ubuntu/documents/projects/motion_control/pid/test/pid_test.cpp",
-  "file": "/home/ubuntu/documents/projects/motion_control/pid/test/pid_test.cpp"
+  "directory": "/home/alberto/Documents/Projects/motion_control/build/spi/test",
+  "command": "/usr/bin/avr-gcc -DF_CPU=4000000UL -I/home/alberto/Documents/Projects/motion_control -I/home/alberto/Documents/Projects/motion_control/spi/inc -I/inc -I/home/alberto/Documents/Projects/motion_control/gpio/inc  -Os   -fpack-struct -fshort-enums -Wall -Werror -pedantic -pedantic-errors -funsigned-char -funsigned-bitfields -ffunction-sections -c -std=gnu99 -mmcu=atmega328p -o CMakeFiles/spi_test-atmega328p.elf.dir/spi_test.c.o   -c /home/alberto/Documents/Projects/motion_control/spi/test/spi_test.c",
+  "file": "/home/alberto/Documents/Projects/motion_control/spi/test/spi_test.c"
 },
 {
-  "directory": "/home/ubuntu/documents/projects/motion_control/build/pid/test/mocks",
-  "command": "/usr/bin/c++   -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/include -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/include -I/home/ubuntu/documents/projects/motion_control/pid/inc  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/mocks.dir/Fixture.cpp.o -c /home/ubuntu/documents/projects/motion_control/pid/test/mocks/Fixture.cpp",
-  "file": "/home/ubuntu/documents/projects/motion_control/pid/test/mocks/Fixture.cpp"
+  "directory": "/home/alberto/Documents/Projects/motion_control/build/uart/src",
+  "command": "/usr/bin/avr-gcc -DF_CPU=4000000UL -I/home/alberto/Documents/Projects/motion_control -I/home/alberto/Documents/Projects/motion_control/uart/inc  -Os   -fpack-struct -fshort-enums -Wall -Werror -pedantic -pedantic-errors -funsigned-char -funsigned-bitfields -ffunction-sections -c -std=gnu99 -mmcu=atmega328p -o CMakeFiles/uart-atmega328p.dir/uart.c.o   -c /home/alberto/Documents/Projects/motion_control/uart/src/uart.c",
+  "file": "/home/alberto/Documents/Projects/motion_control/uart/src/uart.c"
 },
 {
-  "directory": "/home/ubuntu/documents/projects/motion_control/build/pid/test/mocks",
-  "command": "/usr/bin/c++   -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/include -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/include -I/home/ubuntu/documents/projects/motion_control/pid/inc  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/mocks.dir/FakeRte.cpp.o -c /home/ubuntu/documents/projects/motion_control/pid/test/mocks/FakeRte.cpp",
-  "file": "/home/ubuntu/documents/projects/motion_control/pid/test/mocks/FakeRte.cpp"
+  "directory": "/home/alberto/Documents/Projects/motion_control/build/uart/test",
+  "command": "/usr/bin/avr-gcc -DF_CPU=4000000UL -I/home/alberto/Documents/Projects/motion_control -I/home/alberto/Documents/Projects/motion_control/uart/inc  -Os   -fpack-struct -fshort-enums -Wall -Werror -pedantic -pedantic-errors -funsigned-char -funsigned-bitfields -ffunction-sections -c -std=gnu99 -mmcu=atmega328p -o CMakeFiles/uart_test-atmega328p.elf.dir/uart_test.c.o   -c /home/alberto/Documents/Projects/motion_control/uart/test/uart_test.c",
+  "file": "/home/alberto/Documents/Projects/motion_control/uart/test/uart_test.c"
 },
 {
-  "directory": "/home/ubuntu/documents/projects/motion_control/build/pid/test/mocks",
-  "command": "/usr/bin/c++   -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/include -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/include -I/home/ubuntu/documents/projects/motion_control/pid/inc  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/mocks.dir/SystemModel.cpp.o -c /home/ubuntu/documents/projects/motion_control/pid/test/mocks/SystemModel.cpp",
-  "file": "/home/ubuntu/documents/projects/motion_control/pid/test/mocks/SystemModel.cpp"
+  "directory": "/home/alberto/Documents/Projects/motion_control/build/adc/src",
+  "command": "/usr/bin/avr-gcc -DF_CPU=4000000UL -I/home/alberto/Documents/Projects/motion_control -I/home/alberto/Documents/Projects/motion_control/adc/inc  -Os   -fpack-struct -fshort-enums -Wall -Werror -pedantic -pedantic-errors -funsigned-char -funsigned-bitfields -ffunction-sections -c -std=gnu99 -mmcu=atmega328p -o CMakeFiles/adc-atmega328p.dir/adc.c.o   -c /home/alberto/Documents/Projects/motion_control/adc/src/adc.c",
+  "file": "/home/alberto/Documents/Projects/motion_control/adc/src/adc.c"
 },
 {
-  "directory": "/home/ubuntu/documents/projects/motion_control/build/can_driver/src",
-  "command": "/usr/bin/cc  -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/include -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/include -I/home/ubuntu/documents/projects/motion_control/can_driver/inc  -O3 -DNDEBUG   -o CMakeFiles/can_driver.dir/Mcp2515.c.o   -c /home/ubuntu/documents/projects/motion_control/can_driver/src/Mcp2515.c",
-  "file": "/home/ubuntu/documents/projects/motion_control/can_driver/src/Mcp2515.c"
+  "directory": "/home/alberto/Documents/Projects/motion_control/build/adc/test",
+  "command": "/usr/bin/avr-gcc -DF_CPU=4000000UL -I/home/alberto/Documents/Projects/motion_control -I/home/alberto/Documents/Projects/motion_control/adc/inc  -Os   -fpack-struct -fshort-enums -Wall -Werror -pedantic -pedantic-errors -funsigned-char -funsigned-bitfields -ffunction-sections -c -std=gnu99 -mmcu=atmega328p -o CMakeFiles/adc_test-atmega328p.elf.dir/adc_test.c.o   -c /home/alberto/Documents/Projects/motion_control/adc/test/adc_test.c",
+  "file": "/home/alberto/Documents/Projects/motion_control/adc/test/adc_test.c"
 },
 {
-  "directory": "/home/ubuntu/documents/projects/motion_control/build/can_driver/src",
-  "command": "/usr/bin/cc  -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/include -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/include -I/home/ubuntu/documents/projects/motion_control/can_driver/inc  -O3 -DNDEBUG   -o CMakeFiles/can_driver.dir/Mcp2515_Cfg.c.o   -c /home/ubuntu/documents/projects/motion_control/can_driver/src/Mcp2515_Cfg.c",
-  "file": "/home/ubuntu/documents/projects/motion_control/can_driver/src/Mcp2515_Cfg.c"
+  "directory": "/home/alberto/Documents/Projects/motion_control/build/cnt/src",
+  "command": "/usr/bin/avr-gcc -DF_CPU=4000000UL -I/home/alberto/Documents/Projects/motion_control -I/home/alberto/Documents/Projects/motion_control/cnt/inc  -Os   -fpack-struct -fshort-enums -Wall -Werror -pedantic -pedantic-errors -funsigned-char -funsigned-bitfields -ffunction-sections -c -std=gnu99 -mmcu=atmega328p -o CMakeFiles/cnt-atmega328p.dir/cnt.c.o   -c /home/alberto/Documents/Projects/motion_control/cnt/src/cnt.c",
+  "file": "/home/alberto/Documents/Projects/motion_control/cnt/src/cnt.c"
 },
 {
-  "directory": "/home/ubuntu/documents/projects/motion_control/build/can_driver/test",
-  "command": "/usr/bin/c++   -I/home/ubuntu/documents/projects/motion_control/can_driver/inc -I/home/ubuntu/documents/projects/motion_control/can_driver/test/mocks -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/include -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/include -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest -isystem /home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/can_driver_test.dir/can_driver_test.cpp.o -c /home/ubuntu/documents/projects/motion_control/can_driver/test/can_driver_test.cpp",
-  "file": "/home/ubuntu/documents/projects/motion_control/can_driver/test/can_driver_test.cpp"
+  "directory": "/home/alberto/Documents/Projects/motion_control/build/cnt/test",
+  "command": "/usr/bin/avr-gcc -DF_CPU=4000000UL -I/home/alberto/Documents/Projects/motion_control -I/home/alberto/Documents/Projects/motion_control/cnt/inc  -Os   -fpack-struct -fshort-enums -Wall -Werror -pedantic -pedantic-errors -funsigned-char -funsigned-bitfields -ffunction-sections -c -std=gnu99 -mmcu=atmega328p -o CMakeFiles/cnt_test-atmega328p.elf.dir/cnt_test.c.o   -c /home/alberto/Documents/Projects/motion_control/cnt/test/cnt_test.c",
+  "file": "/home/alberto/Documents/Projects/motion_control/cnt/test/cnt_test.c"
 },
 {
-  "directory": "/home/ubuntu/documents/projects/motion_control/build/can_driver/test/mocks",
-  "command": "/usr/bin/c++   -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/include -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/include -I/home/ubuntu/documents/projects/motion_control/can_driver/inc  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/spi_mocks.dir/Fixture.cpp.o -c /home/ubuntu/documents/projects/motion_control/can_driver/test/mocks/Fixture.cpp",
-  "file": "/home/ubuntu/documents/projects/motion_control/can_driver/test/mocks/Fixture.cpp"
+  "directory": "/home/alberto/Documents/Projects/motion_control/build/pid/src",
+  "command": "/usr/bin/avr-gcc -DF_CPU=4000000UL -I/home/alberto/Documents/Projects/motion_control -I/home/alberto/Documents/Projects/motion_control/pid/inc  -Os   -fpack-struct -fshort-enums -Wall -Werror -pedantic -pedantic-errors -funsigned-char -funsigned-bitfields -ffunction-sections -c -std=gnu99 -mmcu=atmega328p -o CMakeFiles/pid-atmega328p.dir/pid.c.o   -c /home/alberto/Documents/Projects/motion_control/pid/src/pid.c",
+  "file": "/home/alberto/Documents/Projects/motion_control/pid/src/pid.c"
 },
 {
-  "directory": "/home/ubuntu/documents/projects/motion_control/build/can_driver/test/mocks",
-  "command": "/usr/bin/c++   -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/include -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/include -I/home/ubuntu/documents/projects/motion_control/can_driver/inc  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/spi_mocks.dir/FakeSpi.cpp.o -c /home/ubuntu/documents/projects/motion_control/can_driver/test/mocks/FakeSpi.cpp",
-  "file": "/home/ubuntu/documents/projects/motion_control/can_driver/test/mocks/FakeSpi.cpp"
+  "directory": "/home/alberto/Documents/Projects/motion_control/build/can_driver/src",
+  "command": "/usr/bin/avr-gcc -DF_CPU=4000000UL -I/home/alberto/Documents/Projects/motion_control -I/home/alberto/Documents/Projects/motion_control/can_driver/inc  -Os   -fpack-struct -fshort-enums -Wall -Werror -pedantic -pedantic-errors -funsigned-char -funsigned-bitfields -ffunction-sections -c -std=gnu99 -mmcu=atmega328p -o CMakeFiles/can_driver-atmega328p.dir/Mcp2515.c.o   -c /home/alberto/Documents/Projects/motion_control/can_driver/src/Mcp2515.c",
+  "file": "/home/alberto/Documents/Projects/motion_control/can_driver/src/Mcp2515.c"
 },
 {
-  "directory": "/home/ubuntu/documents/projects/motion_control/build/can_driver/test/mocks",
-  "command": "/usr/bin/c++   -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googletest/include -I/home/ubuntu/documents/projects/motion_control/build/_deps/googletest-src/googlemock/include -I/home/ubuntu/documents/projects/motion_control/can_driver/inc  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/spi_mocks.dir/FakeTimer.cpp.o -c /home/ubuntu/documents/projects/motion_control/can_driver/test/mocks/FakeTimer.cpp",
-  "file": "/home/ubuntu/documents/projects/motion_control/can_driver/test/mocks/FakeTimer.cpp"
+  "directory": "/home/alberto/Documents/Projects/motion_control/build/can_driver/src",
+  "command": "/usr/bin/avr-gcc -DF_CPU=4000000UL -I/home/alberto/Documents/Projects/motion_control -I/home/alberto/Documents/Projects/motion_control/can_driver/inc  -Os   -fpack-struct -fshort-enums -Wall -Werror -pedantic -pedantic-errors -funsigned-char -funsigned-bitfields -ffunction-sections -c -std=gnu99 -mmcu=atmega328p -o CMakeFiles/can_driver-atmega328p.dir/Mcp2515_Cfg.c.o   -c /home/alberto/Documents/Projects/motion_control/can_driver/src/Mcp2515_Cfg.c",
+  "file": "/home/alberto/Documents/Projects/motion_control/can_driver/src/Mcp2515_Cfg.c"
 }
 ]

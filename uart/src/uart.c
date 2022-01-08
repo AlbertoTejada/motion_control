@@ -1,4 +1,8 @@
 #include "uart.h"
+#include "board.h"
+
+#define BR_VALUE (OSC_FREQUENCY/16/BAUD_RATE - 1)
+
 
 void uart_init(void){
 	// Set baud rate

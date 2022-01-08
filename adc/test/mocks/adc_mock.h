@@ -13,7 +13,7 @@ public:
 	//Mock methods
 	MOCK_METHOD(void, adc_init, ());
 	
-	MOCK_METHOD(uint8_t, read_angle, ());
+	MOCK_METHOD(uint16_t, read_angle, ());
 };
 
 #endif // ADC_MOCK_H

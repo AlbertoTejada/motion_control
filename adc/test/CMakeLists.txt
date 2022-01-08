@@ -14,11 +14,16 @@ if(CMAKE_CROSSCOMPILING)
       adc_test
       adc_test.c
    )
+
+   avr_target_include_directories(
+      adc_test
+      PUBLIC ${uart_dir}/inc
+   )
    
    find_library(C_LIB c)
    message(STATUS "avr-libc: ${C_LIB}")
    
-   avr_target_link_libraries(adc_test adc ${C_LIB})
+   avr_target_link_libraries(adc_test adc uart ${C_LIB})
 else(CMAKE_CROSSCOMPILING)
    add_subdirectory(mocks)
 endif(CMAKE_CROSSCOMPILING)

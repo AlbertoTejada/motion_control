@@ -1,19 +1,19 @@
+#pragma once
+
 #ifndef UART_H
 #define UART_H
 
 #include <stdint.h>
-#include "board.h"
 
 #define BAUD_RATE (9600U)
-#define BR_VALUE (OSC_FREQUENCY/16/BAUD_RATE - 1)
 // UART Ctrl B resgister settings:
-#define UART_TX_RX_ENABLE (1 << RXEN0) | (1 << TXEN0)
-#define UART_RXCM_ENABLE (1 << RXCIE0)
-#define UART_EMTY_ENABLE (1 << UDRIE0)
+#define UART_TX_RX_ENABLE (1 << 4) | (1 << 3)
+#define UART_RXCM_ENABLE (1 << 7)
+#define UART_EMTY_ENABLE (1 << 5)
 // UART Ctrl C register settings:
-#define UART_ODD_PARITY (3 << UPM00)
-#define UART_STOP_BIT (1 << USBS0)
-#define UART_8BIT (3 << UCSZ00)
+#define UART_ODD_PARITY (3 << 4)
+#define UART_STOP_BIT (1 << 3)
+#define UART_8BIT (3 << 1)
 // Helper definitions:
 #define RECEIVED_TRUE (1U)
 #define RECEIVED_FALSE (0U)
