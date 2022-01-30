@@ -41,18 +41,12 @@ endif(NOT CMAKE_BUILD_TYPE)
 ##################################################################################
 # include subdirectories
 ##################################################################################
-# foreach(module ${modules})
-#   if(IS_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/${module}
-#       AND NOT ${module} STREQUAL "build")
-#     add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/${module})
-#     message(STATUS "Added module: ${module}")
-#   endif()
-# endforeach()
 add_subdirectory(pwm)
 add_subdirectory(gpio)
 add_subdirectory(spi)
 add_subdirectory(uart)
 add_subdirectory(adc)
+add_subdirectory(schd)
 add_subdirectory(cnt)
 add_subdirectory(pid)
 add_subdirectory(can_driver)

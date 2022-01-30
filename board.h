@@ -50,6 +50,10 @@
 #define MOTOR_SPIN PIN4
 #define MOTOR_SPIN_PORT PORTD
 #define MOTOR_SPIN_DIR DDRD
+// Power motor pulse counter:
+/* #define MOTOR_CNT PIN6 */
+/* #define MOTOR_CNT_PORT PORTB */
+/* #define MOTOR_CNT_DIR DDRB */
 // Stering wheel motor PWM:
 #define STEERING_PWM PIN6
 #define STEERING_PWM_PORT PORTD
@@ -97,10 +101,25 @@
 /*
  * Definitions of the ADC registers:
  */
+// ADC output data:
 #define ADC_DATAL ADCL
 #define ADC_DATAH ADCH
+// Configuration and control:
 #define ADC_MUX ADMUX
 #define ADC_CTRLA ADCSRA
 #define ADC_CTRLB ADCSRB
 #define ADC_DISB DIDR0
+
+/*
+ * Definitions of the scheduler registers:
+ */
+#define SCHD_CTRLA TCCR2A
+#define SCHD_CTRLB TCCR2B
+#define SCHD_TIMEA OCR2A
+#define SCHD_TIMEB OCR2B
+#define SCHD_IMASK TIMSK2
+#define SCHD_IFLAG TIFR2
+#define SCHD_ASYC ASSR
+
+
 #endif // BOARD_H

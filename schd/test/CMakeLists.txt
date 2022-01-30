@@ -11,19 +11,20 @@
 
 if(CMAKE_CROSSCOMPILING)
    add_avr_executable(
-      cnt_test
-      cnt_test.c
+      schd_test
+      schd_test.c
    )
 
    avr_target_include_directories(
-      cnt_test
+      schd_test
       PUBLIC ${uart_dir}/inc
+      PUBLIC ${gpio_dir}/inc
    )
    
    find_library(C_LIB c)
    message(STATUS "avr-libc: ${C_LIB}")
    
-   avr_target_link_libraries(cnt_test cnt uart ${C_LIB})
+   avr_target_link_libraries(schd_test schd uart gpio ${C_LIB})
 else(CMAKE_CROSSCOMPILING)
    add_subdirectory(mocks)
 endif(CMAKE_CROSSCOMPILING)
