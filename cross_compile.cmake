@@ -27,7 +27,7 @@ message(STATUS "Current L_FUSE is set to: ${AVR_L_FUSE}")
 ##################################################################################
 # needs to be defined for AVR toolchain
 ##################################################################################
-set(MCU_SPEED "4000000UL")
+set(MCU_SPEED "16000000UL")
 
 ##################################################################################
 # some cmake cross-compile necessities
@@ -65,18 +65,18 @@ message(STATUS "Set CMAKE_SYSTEM_LIBRARY_PATH to ${CMAKE_SYSTEM_LIBRARY_PATH}")
 # set compiler options for build types
 ##################################################################################
 if(CMAKE_BUILD_TYPE MATCHES Release)
-   set(CMAKE_C_FLAGS_RELEASE "-Os")
-   set(CMAKE_CXX_FLAGS_RELEASE "-Os")
+  set(CMAKE_C_FLAGS_RELEASE "-Os -Werror")
+  set(CMAKE_CXX_FLAGS_RELEASE "-Os -Werror")
 endif(CMAKE_BUILD_TYPE MATCHES Release)
 
 if(CMAKE_BUILD_TYPE MATCHES RelWithDebInfo)
-   set(CMAKE_C_FLAGS_RELWITHDEBINFO "-Os -save-temps -g -gdwarf-3 -gstrict-dwarf")
-   set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-Os -save-temps -g -gdwarf-3 -gstrict-dwarf")
+  set(CMAKE_C_FLAGS_RELWITHDEBINFO "-Os -save-temps -g -gdwarf-3 -gstrict-dwarf -Werror")
+  set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-Os -save-temps -g -gdwarf-3 -gstrict-dwarf -Werror")
 endif(CMAKE_BUILD_TYPE MATCHES RelWithDebInfo)
 
 if(CMAKE_BUILD_TYPE MATCHES Debug)
-   set(CMAKE_C_FLAGS_DEBUG "-O0 -save-temps -g -gdwarf-3 -gstrict-dwarf")
-   set(CMAKE_CXX_FLAGS_DEBUG "-O0 -save-temps -g -gdwarf-3 -gstrict-dwarf")
+  set(CMAKE_C_FLAGS_DEBUG "-O0 -save-temps -g -gdwarf-3 -gstrict-dwarf -Wno-error")
+  set(CMAKE_CXX_FLAGS_DEBUG "-O0 -save-temps -g -gdwarf-3 -gstrict-dwarf -Wno-error")
 endif(CMAKE_BUILD_TYPE MATCHES Debug)
 
 ##################################################################################
@@ -86,7 +86,7 @@ add_definitions("-DF_CPU=${MCU_SPEED}")
 add_definitions("-fpack-struct")
 add_definitions("-fshort-enums")
 add_definitions("-Wall")
-add_definitions("-Werror")
+# add_definitions("-Werror")
 # http://gcc.gnu.org/onlinedocs/gcc-4.8.2/gcc/Alternate-Keywords.html#Alternate-Keywords
 # [...]-pedantic and other options cause warnings for many GNU C extensions. You can prevent such warnings within
 # one expression by writing __extension__ before the expression. __extension__ has no effect aside from this.[...] 

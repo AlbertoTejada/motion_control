@@ -5,6 +5,7 @@ void (*task_10_ms_ptr)(void);
 void (*task_100_ms_ptr)(void);
 volatile uint8_t task_10_ms_flag = 0;
 volatile uint8_t task_100_ms_flag = 0;
+uint8_t cycle_counter;
 
 void schd_init(void) {
 	// Set the clock input:
@@ -41,12 +42,16 @@ void task_100_ms(void (*task)(void)) {
 
 void scheduler(void) {
 	if(task_10_ms_flag) {
-		(*task_10_ms_ptr)();
 		task_10_ms_flag = 0;
+		(*task_10_ms_ptr)();
+		cycle_counter++;
 	}
 	if(task_100_ms_flag) {
-		(*task_100_ms_ptr)();
 		task_100_ms_flag = 0;
+		if(cycle_counter > (SCHD_TASK_B_TIME/SCHD_TASK_A_TIME)) {
+			cycle_counter = 0;
+			(*task_100_ms_ptr)();
+		}
 	}
 }
 

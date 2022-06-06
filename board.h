@@ -4,6 +4,7 @@
 #include <avr/io.h>
 
 /* Arduino Nano crystal oscillator frequency [Hz] */
+// TODO: this is already defined in the macro F_CPU
 #define OSC_FREQUENCY 16000000U
 
 /**
