@@ -1,6 +1,24 @@
+/**
+ * \brief Simple test to verify the ADC feature
+ *
+ * \file adc_test.c
+ * \author Alberto Tejada
+ */
+
 #include "adc.h"
 #include "uart.h"
 #include <util/delay.h>
+
+/**
+ * \brief ADC on target test:
+ * This is the simplest way to verify that the ADC is
+ * correctly configured on target.
+ * In order to execute this test, a potentiometer must be
+ * connected to the ADC pin of the board and the UART
+ * connection with the test machine must be enabled.
+ * The expected result is the test machine receives through
+ * the UART the ADC value as a 10 bit integer
+ */
 
 void to_str(uint16_t data, char* result);
 

@@ -1,18 +1,18 @@
 #pragma once
 
-#ifndef FIXTURE_H
-#define FIXTURE_H
+#ifndef FAKE_SPI_H
+#define FAKE_SPI_H
 
 #include <memory.h>
 #include "gtest/gtest.h"
 #include "spi_mock.h"
 
-class Fixture: public ::testing::Test{
+class FakeSpi: public ::testing::Test{
 public:
-	Fixture(){
+	FakeSpi(){
 		_spi.reset(new ::testing::NiceMock<SpiMock>());
 	}
-	~Fixture(){
+	~FakeSpi(){
 		_spi.reset();
 	}
 	virtual void SetUp(){}
@@ -22,4 +22,4 @@ public:
 	static std::unique_ptr<SpiMock> _spi;
 };
 
-#endif // FIXTURE_H
+#endif // FAKE_SPI_H

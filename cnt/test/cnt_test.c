@@ -1,6 +1,25 @@
+/**
+ * \brief Simple test to verify the Counter feature 
+ *
+ * \file cnt_test.c
+ * \author Alberto Tejada
+ */
+
 #include "cnt.h"
 #include "uart.h"
 #include <util/delay.h>
+
+/**
+ * \brief Counter pin test:
+ * This is the simplest way to verify that the counter
+ * pin is actually working.
+ * In order to execute this test on target, a pulse generator
+ * must be connected to the counter pin and the UART 
+ * communication must be enabled with the test machine.
+ * The expted result is tha the test machine receives through
+ * UART the number up pulses detected on the counter pin plus
+ * a message number as a separate one byte counter
+ */
 
 void to_str(uint8_t data, char* result);
 

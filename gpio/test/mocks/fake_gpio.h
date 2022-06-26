@@ -1,18 +1,18 @@
 #pragma once
 
-#ifndef FIXTURE_H
-#define FIXTURE_H
+#ifndef FAKE_GPIO_H
+#define FAKE_GPIO_H
 
 #include <memory.h>
 #include "gtest/gtest.h"
 #include "gpio_mock.h"
 
-class Fixture: public ::testing::Test{
+class FakeGpio: public ::testing::Test{
 public:
-	Fixture(){
+	FakeGpio(){
 		_gpio.reset(new ::testing::NiceMock<GpioMock>());
 	}
-	~Fixture(){
+	~FakeGpio(){
 		_gpio.reset();
 	}
 	virtual void SetUp(){}
@@ -22,4 +22,4 @@ public:
 	static std::unique_ptr<GpioMock> _gpio;
 };
 
-#endif // FIXTURE_H
+#endif // FAKE_GPIO_H

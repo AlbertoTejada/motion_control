@@ -16,14 +16,16 @@ public:
   SpiTest(){}
 };
 
-TEST_F(SpiTest, InitDriver) {
+TEST_F(SpiTest, InitDriver)
+{
   uint8_t number = 5;
   EXPECT_CALL(*_spi, spi_init(number))
     .Times(1);
   mcp2515_init(number);
 }
 
-TEST_F(SpiTest, reset) {
+TEST_F(SpiTest, reset)
+{
   // Required parameters:;
   static const uint8_t MCP_CANINTE_value = (01U | 02U | 32U | 128U);
   static const uint8_t MCP_RXB0CTRL_mask = (96U | 04U | 03U);

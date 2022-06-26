@@ -2,7 +2,7 @@ message(STATUS "Including spi_mock")
 
 add_library(
   spi_mock	
-	fixture.cpp spi_mock.cpp
+	fake_spi.cpp spi_mock.cpp
 )
 
 target_include_directories(

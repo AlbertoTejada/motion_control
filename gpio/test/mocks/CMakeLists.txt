@@ -2,7 +2,7 @@ message(STATUS "Including gpio_mock")
 
 add_library(
   gpio_mock	
-	fixture.cpp gpio_mock.cpp
+	fake_gpio.cpp gpio_mock.cpp
 )
 
 target_include_directories(

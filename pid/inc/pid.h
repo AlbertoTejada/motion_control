@@ -16,7 +16,7 @@
 #endif
 
 /**
- * Initialization function of PID. This function shall be
+ * Initilizes the PID. This function shall be
  * called once during the system.
  * initialization and shall be executed only once.
  * @return Error code, 0 if success.

@@ -1,5 +1,7 @@
 Motion Control System
 
+![Unit Tests](https://github.com/AlbertoTejada/motion_control/actions/workflows/unit_tests.yml/badge.svg)
+
 This is a Embedded C project designed for an ATmega328p microcontroller that intends to provide a simple CAN interface to control an electric autonomous RC car.
 
 The system provides two controllers:

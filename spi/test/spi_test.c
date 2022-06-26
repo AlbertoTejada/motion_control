@@ -33,6 +33,7 @@
  * If the slave board is an ATmega328p, the SPI Clock speed
  * shall be set to fosc/8 instead of fosc/2
  */
+
 int main(void) {
 
 	char test[] = "Hello World! 0\n";

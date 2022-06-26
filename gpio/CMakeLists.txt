@@ -1,4 +1,4 @@
-set(gpio_dir ${CMAKE_CURRENT_SOURCE_DIR})
+set(gpio_dir ${CMAKE_CURRENT_SOURCE_DIR} CACHE INTERNAL "")
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/inc)
 
 ##

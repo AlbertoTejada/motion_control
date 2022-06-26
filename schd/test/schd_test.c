@@ -1,12 +1,34 @@
+/**
+ * \brief Simple test to verify the scheduler feature
+ *
+ * \file schd_test.c
+ * \author Alberto Tejada
+ */
+
 #include "schd.h"
 #include "uart.h"
 #include <util/delay.h>
 
+/**
+ * \brief Scheduler on target test:
+ * This is the simplest way to verify that the scheduler is
+ * correctly configured on target.
+ * In order to execute this test, the UART communication must
+ * be enabled with the test machine.
+ * The expected behaviour is that the `str_task_1` string is
+ * received through the UART each 10 ms and the `str_task_2`
+ * is received each 100 ms.
+ *
+ * \note
+ * Some performance issues have been observed in this
+ * feature. For an unknown reason, the scheduler struggles
+ * with strings longer than 6 characters, which is far below
+ * the expected limit.
+ */
+
 void task_1(void);
 void task_2(void);
 
-/* char str_task_1[] = "10 ms task\n"; */
-/* char str_task_2[] = "--> 100 ms task\n"; */
 char str_task_1[] = "-----1\n";
 char str_task_2[] = "+++++2\n";
 

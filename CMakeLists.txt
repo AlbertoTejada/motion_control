@@ -41,6 +41,7 @@ endif(NOT CMAKE_BUILD_TYPE)
 ##################################################################################
 # include subdirectories
 ##################################################################################
+# MCAL
 add_subdirectory(pwm)
 add_subdirectory(gpio)
 add_subdirectory(spi)
@@ -48,8 +49,11 @@ add_subdirectory(uart)
 add_subdirectory(adc)
 add_subdirectory(schd)
 add_subdirectory(cnt)
+# EAL
+add_subdirectory(spi_if)
+add_subdirectory(can_drv)
+# SWC
 add_subdirectory(pid)
-add_subdirectory(can_driver)
 
 ##################################################################################
 # link library to executable
