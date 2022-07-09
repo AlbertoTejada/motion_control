@@ -7,7 +7,7 @@
 #include "gtest/gtest.h"
 #include "spi_mock.h"
 
-class FakeSpi: public ::testing::Test{
+class FakeSpi: virtual public ::testing::Test{
 public:
 	FakeSpi(){
 		_spi.reset(new ::testing::NiceMock<SpiMock>());
@@ -15,8 +15,6 @@ public:
 	~FakeSpi(){
 		_spi.reset();
 	}
-	virtual void SetUp(){}
-	virtual void TearDown(){}
 
 	// Pointer for accessing to the mocked library
 	static std::unique_ptr<SpiMock> _spi;

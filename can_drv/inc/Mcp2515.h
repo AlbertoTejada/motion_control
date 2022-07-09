@@ -263,7 +263,7 @@ static const uint8_t EFLG_ERRORMASK = EFLG_RX1OVR
                                     | EFLG_TXEP
                                     | EFLG_RXEP;
 
-void mcp2515_init(const uint8_t _CS);
+void mcp2515_init(void);
 MCP2515_ERROR reset(void);
 MCP2515_ERROR setConfigMode();
 MCP2515_ERROR setListenOnlyMode();

@@ -41,6 +41,10 @@ endif(NOT CMAKE_BUILD_TYPE)
 ##################################################################################
 # include subdirectories
 ##################################################################################
+if(NOT CROSSCOMPILE)
+   add_subdirectory(delay)
+endif(NOT CROSSCOMPILE)
+
 # MCAL
 add_subdirectory(pwm)
 add_subdirectory(gpio)

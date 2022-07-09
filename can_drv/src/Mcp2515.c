@@ -1,8 +1,8 @@
 #include <string.h>
+#include <util/delay.h>
 #include "Mcp2515.h"
-#include "SpiHandler.h"
 #include "Mcp2515_Cfg.h"
-#include "Os_TimeServices.h"
+#include "spi_if.h"
 
 TXBn_REGS TXB[N_TXBUFFERS] = {
         {MCP_TXB0CTRL, MCP_TXB0SIDH, MCP_TXB0DATA},
@@ -15,9 +15,9 @@ RXBn_REGS RXB[N_RXBUFFERS] = {
         {MCP_RXB1CTRL, MCP_RXB1SIDH, MCP_RXB1DATA, CANINTF_RX1IF}
 };
 
-void mcp2515_init(const uint8_t _CS)
+void mcp2515_init(void)
 {
-    spi_init(_CS);
+    spi_init();
 }
 
 MCP2515_ERROR reset(void)
@@ -26,7 +26,7 @@ MCP2515_ERROR reset(void)
     spi_transfer(INSTRUCTION_RESET);
     spi_end();
 
-    os_wait_ms(10);
+    _delay_ms(10);
 
     uint8_t zeros[14];
     memset(zeros, 0, sizeof(zeros));

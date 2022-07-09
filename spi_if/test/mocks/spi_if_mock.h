@@ -17,7 +17,7 @@ public:
 
 	MOCK_METHOD(void, spi_start, ());
 
-	MOCK_METHOD(void, spi_stop, ());
+	MOCK_METHOD(void, spi_end, ());
 };
 
 #endif // SPI_IF_MOCK_H

@@ -19,6 +19,11 @@ include_directories(
    ${googletest_SOURCE_DIR}/googlemock/include
 )
 
+if(CMAKE_BUILD_TYPE MATCHES Debug)
+  set(CMAKE_C_FLAGS_DEBUG "-O3 -g")
+  set(CMAKE_CXX_FLAGS_DEBUG "-O3 -g")
+endif(CMAKE_BUILD_TYPE MATCHES Debug)
+
 message(STATUS "Using google test framework")
 message(STATUS "Include gtest directory: ${googletest_SOURCE_DIR}/googletest/include")
 message(STATUS "Include gmock directory: ${googletest_SOURCE_DIR}/googlemock/include")

@@ -7,7 +7,7 @@
 #include "gtest/gtest.h"
 #include "gpio_mock.h"
 
-class FakeGpio: public ::testing::Test{
+class FakeGpio: virtual public ::testing::Test{
 public:
 	FakeGpio(){
 		_gpio.reset(new ::testing::NiceMock<GpioMock>());
@@ -15,8 +15,6 @@ public:
 	~FakeGpio(){
 		_gpio.reset();
 	}
-	virtual void SetUp(){}
-	virtual void TearDown(){}
 
 	// Pointer for accessing to the mocked library
 	static std::unique_ptr<GpioMock> _gpio;

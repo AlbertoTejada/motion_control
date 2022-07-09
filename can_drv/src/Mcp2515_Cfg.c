@@ -1,14 +1,14 @@
+#include <util/delay.h>
 #include "Mcp2515_Cfg.h"
-#include "SpiHandler.h"
-#include "Os_TimeServices.h"
+#include "spi_if.h"
 
 ERROR_MODE setMode(const CANCTRL_REQOP_MODE mode)
 {
     modifyRegister(MCP_CANCTRL, CANCTRL_REQOP, mode);
 
-    unsigned long endTime = os_timer_ms() + 10;
     uint8_t modeMatch = 0;
-    while (os_timer_ms() < endTime) {
+    for (uint8_t counter = 0; counter < 10; counter++) {
+        _delay_ms(1);
         uint8_t newmode = readRegister(MCP_CANSTAT);
         newmode &= CANSTAT_OPMOD;
 

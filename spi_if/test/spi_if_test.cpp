@@ -10,23 +10,18 @@ extern "C" {
 using namespace ::testing;
 using ::testing::Return;
 
-class Spi: public FakeSpi{
+class SpiIfFixture: public FakeSpi, public FakeGpio{
 	public:
-		Spi(){}
+		SpiIfFixture(){}
 };
 
-class Gpio: public FakeGpio{
-	public:
-		Gpio(){}
-};
-
-TEST_F(Spi, spi_init) {
+TEST_F(SpiIfFixture, spi_init) {
 	EXPECT_CALL(*_spi, spi_init())
 		.Times(1);
 	spi_init();
 }
 
-TEST_F(Spi, spi_transfer) {
+TEST_F(SpiIfFixture, spi_transfer) {
 	uint8_t transfer_value = 0xCC;
 	uint8_t received_value = 0x55;
 	EXPECT_CALL(*_spi, spi_transfer(transfer_value))
@@ -37,13 +32,13 @@ TEST_F(Spi, spi_transfer) {
 	EXPECT_EQ(result, received_value);
 }
 
-TEST_F(Gpio, spi_start) {
+TEST_F(SpiIfFixture, spi_start) {
 	EXPECT_CALL(*_gpio, can_drv_select())
 		.Times(1);
 	spi_start();
 }
 
-TEST_F(Gpio, spi_end) {
+TEST_F(SpiIfFixture, spi_end) {
 	EXPECT_CALL(*_gpio, can_drv_deselect())
 		.Times(1);
 	spi_end();
