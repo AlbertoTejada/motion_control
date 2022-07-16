@@ -56,6 +56,8 @@ add_subdirectory(cnt)
 # EAL
 add_subdirectory(spi_if)
 add_subdirectory(can_drv)
+# Service
+# add_subdirectory(can)
 # SWC
 add_subdirectory(pid)
 

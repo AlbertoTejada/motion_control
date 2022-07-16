@@ -1,7 +1,7 @@
 #ifndef _MCP2515_H_
 #define _MCP2515_H_
 
-#include "can.h"
+#include "can_frame.h"
 
 /*
  *  Speed 8M

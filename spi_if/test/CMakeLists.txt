@@ -20,6 +20,7 @@ if(NOT CMAKE_CROSSCOMPILING)
    )
 
    add_subdirectory(mocks)
+
+   gtest_discover_tests(spi_if_test)
 endif(NOT CMAKE_CROSSCOMPILING)
 
-gtest_discover_tests(spi_if_test)

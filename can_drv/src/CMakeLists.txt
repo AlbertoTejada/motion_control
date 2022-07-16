@@ -1,6 +1,7 @@
 ##
 ## Source definitions
 ##
+
 if(CMAKE_CROSSCOMPILING)
 	add_avr_library(can_drv Mcp2515.c Mcp2515_Cfg.c)
 

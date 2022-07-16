@@ -1,4 +1,4 @@
-set(cnt_dir ${CMAKE_CURRENT_SOURCE_DIR} CACHE INTERNAL "") 
+set(can_dir ${CMAKE_CURRENT_SOURCE_DIR} CACHE INTERNAL "") 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/inc)
 
 ##
@@ -11,3 +11,4 @@ add_subdirectory(src)
 ## Test definitions
 ##
 add_subdirectory(test)
+
