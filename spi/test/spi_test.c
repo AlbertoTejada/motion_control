@@ -34,12 +34,17 @@
  * shall be set to fosc/8 instead of fosc/2
  */
 
+#ifdef AVR_SIM
+	#include "../../avr_mcu_section.h"
+	AVR_MCU(F_CPU, "atmega328p");
+#endif
+
 int main(void) {
 
 	char test[] = "Hello World! 0\n";
 	uint8_t idx = 0;
 	uint8_t len = 15;
-	uint8_t input; 
+	uint8_t input = 0; 
 	gpio_init();
 	can_drv_deselect();
 	spi_init();

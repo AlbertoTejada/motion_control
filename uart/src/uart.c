@@ -2,7 +2,7 @@
 #include "board.h"
 #include <avr/interrupt.h>
 
-#define BR_VALUE (OSC_FREQUENCY/16/BAUD_RATE - 1)
+#define BR_VALUE (F_CPU/16/BAUD_RATE - 1)
 
 volatile uint8_t uart_output;
 

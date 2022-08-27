@@ -11,7 +11,7 @@
 #define SCHD_TASK_B_TIME 100
 
 /* #define SCHD_MILLIS(TIME, PRES) ((TIME * PRES) / OSC_FREQUENCY) */
-#define SCHD_MILLIS(TIME, PRES) (((OSC_FREQUENCY / 1000) / PRES) * TIME)
+#define SCHD_MILLIS(TIME, PRES) (((F_CPU / 1000) / PRES) * TIME)
 
 void task_10_ms_cgf(void);
 
